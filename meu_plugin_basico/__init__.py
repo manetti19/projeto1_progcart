@@ -1,3 +1,3 @@
 def classFactory(iface):
-    from .meu_plugin_basico import MeuPluginBasico
-    return MeuPluginBasico(iface)
+    from .layer_loader import LayerLoader
+    return LayerLoader(iface)
