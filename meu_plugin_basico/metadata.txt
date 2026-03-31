@@ -1,0 +1,9 @@
+[general]
+name=Meu Plugin Basico
+description=Plugin de teste com janela simples
+version=0.1
+qgisMinimumVersion=3.0
+author=Seu Nome
+email=seuemail@exemplo.com
+about=Plugin mínimo para abrir uma janela com label e botão.
+icon=icon.png

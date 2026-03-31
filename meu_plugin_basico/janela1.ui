@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QLabel" name="label_coordenada">
+     <property name="text">
+      <string>Nenhum ponto selecionado</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QPushButton" name="botao_baixar_imagem">
+     <property name="text">
+      <string>Baixar imagem</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_status">
+     <property name="text">
+      <string>Aguardando busca</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="botao_buscar_sentinel">
+     <property name="text">
+      <string>Buscar Sentinel-2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="botao_selecionar_ponto">
+     <property name="text">
+      <string>Selecionar ponto no mapa</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_instrucoes">
+     <property name="text">
+      <string>&lt;b&gt;Instruções de uso&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+1. Adicione um mapa de fundo, como o &lt;b&gt;OSM&lt;/b&gt;, para visualizar melhor a área de interesse.&lt;br&gt;
+2. Use um &lt;b&gt;CRS projetado&lt;/b&gt; da sua região para trabalhar com melhor posicionamento espacial.&lt;br&gt;
+3. Clique em &lt;b&gt;Selecionar ponto no mapa&lt;/b&gt; e escolha a área desejada.&lt;br&gt;
+4. Clique em &lt;b&gt;Buscar Sentinel-2&lt;/b&gt; para encontrar uma imagem da região.&lt;br&gt;
+5. Escolha o tamanho do recorte desejado.&lt;br&gt;
+6. Clique em &lt;b&gt;Baixar imagem&lt;/b&gt; para carregar o raster no QGIS.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Observações:&lt;/b&gt;&lt;br&gt;
+- O mapa OSM ajuda a escolher visualmente o local correto.&lt;br&gt;
+- Recortes menores baixam mais rápido.&lt;br&gt;
+- A fonte da imagem é a coleção &lt;b&gt;Sentinel-2 Level-2A&lt;/b&gt;, acessada pela &lt;b&gt;Microsoft Planetary Computer&lt;/b&gt;. O conjunto possui 13 bandas com resoluções de &lt;b&gt;10 m a 60 m&lt;/b&gt;.&lt;br&gt;
+- Neste plugin, a imagem usada é o asset &lt;b&gt;visual&lt;/b&gt;, equivalente à composição RGB/True Colour Image, baseada nas bandas &lt;b&gt;B02, B03 e B04&lt;/b&gt;, que pertencem ao grupo de &lt;b&gt;10 m&lt;/b&gt;.</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QComboBox" name="combo_tamanho_recorte">
+     <property name="currentText">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Escolha um recorte:</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>512 x 512</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1024 x 1024</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2048 x 2048</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_tamanho">
+     <property name="text">
+      <string>Tamanho do recorte</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

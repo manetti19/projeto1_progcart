@@ -1,0 +1,15 @@
+[workspace]
+authors = ["manetti19 <manetti.biazon@ime.eb.br>"]
+channels = ["conda-forge"]
+name = "meu_plugin"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+qgis = ">=3.44.7,<4"
+pyqt = ">=5.15.11,<6"
+numpy = ">=2.4.3,<3"
+pystac-client = ">=0.9.0,<0.10"
+planetary-computer = ">=1.0.0,<2"
