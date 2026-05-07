@@ -43,7 +43,7 @@ class SiteSentinel:
         # Cria a barra de digitacao para o nome da cidade.
         cidade = st.text_input(
             "Cidade",
-            placeholder="Exemplo: Serrolandia, Bahia"
+            placeholder="Exemplo: Rio de Janeiro, Guararapes"
         )
 
         # Cria o botao de busca.
